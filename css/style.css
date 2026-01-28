@@ -1,0 +1,13 @@
+/* Padrão de pc*/
+@media  (max-width:4000px){
+    body{
+        background-color: blue;
+    }
+}
+
+/* Padrão de Celular*/
+@media  (max-width:576px){
+    body{
+        background-color: red;
+    }
+}
