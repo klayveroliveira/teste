@@ -8,6 +8,62 @@
 /* Padrão de Celular*/
 @media  (max-width:576px){
     body{
-        background-color: red;
+        background-color: orange;
+    }
+    header{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .direita{
+        text-align: right;
+    }
+    .s1 img{
+        border-radius: 50%;
+        outline: 3px solid rgb(203, 203, 219); /* semelhante a uma borda */
+        outline-offset: 1px; /*afastamento do outline*/
+        width: 50px;
+        height: 50px;
+    }
+    .s1 h1{
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        padding: 30px 0px;
+    }
+    .slider{
+        width: 100%;
+        overflow: hidden;
+        height: 250px;
+        padding: 20px 0px;
+    }
+    .slide_principal{
+        display: flex;
+        width: 200%;
+    }
+    .slidee{
+        width: 50%;
+        transition: margin-left 2s;
+    }
+    .slider input{
+        display: none;
+    }
+    .quadradinhos{
+        text-align: center;
+        margin-top: -30px;
+    }
+    .quadradinhos label{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #bola1:checked ~ .primeiro{
+        margin-left: 0%;
+    }
+    #bola2:checked ~ .primeiro{
+        margin-left: -50%;
+    }
+    .quadradinhos img{
+        width: 5%;
+        outline: 3px solid white;
     }
 }
