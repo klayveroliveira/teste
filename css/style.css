@@ -1,69 +1,269 @@
 /* Padrão de pc*/
-@media  (max-width:4000px){
-    body{
+@media (max-width:4000px) {
+    body {
         background-color: blue;
     }
 }
 
 /* Padrão de Celular*/
-@media  (max-width:576px){
-    body{
+@media (max-width:576px) {
+    body {
         background-color: orange;
     }
-    header{
+
+    header {
         margin-top: 20px;
         margin-left: 20px;
     }
-    .direita{
+
+    .direita {
         text-align: right;
     }
-    .s1 img{
+
+    .s1 img {
         border-radius: 50%;
-        outline: 3px solid rgb(203, 203, 219); /* semelhante a uma borda */
-        outline-offset: 1px; /*afastamento do outline*/
+        outline: 3px solid rgb(203, 203, 219);
+        /* semelhante a uma borda */
+        outline-offset: 1px;
+        /*afastamento do outline*/
         width: 50px;
         height: 50px;
     }
-    .s1 h1{
+
+    .s1 h1 {
         font-size: 30px;
         font-weight: bold;
         color: white;
         padding: 30px 0px;
     }
-    .slider{
+
+    .slider {
         width: 100%;
         overflow: hidden;
         height: 250px;
         padding: 20px 0px;
     }
-    .slide_principal{
+
+    .slide_principal {
         display: flex;
         width: 200%;
     }
-    .slidee{
+
+    .slidee {
         width: 50%;
         transition: margin-left 2s;
     }
-    .slider input{
+
+    .slider input {
         display: none;
     }
-    .quadradinhos{
+
+    .quadradinhos {
         text-align: center;
         margin-top: -30px;
     }
-    .quadradinhos label{
+
+    .quadradinhos label {
         margin-left: 5%;
         margin-right: 5%;
     }
 
-    #bola1:checked ~ .primeiro{
+    #bola1:checked~.primeiro {
         margin-left: 0%;
     }
-    #bola2:checked ~ .primeiro{
+
+    #bola2:checked~.primeiro {
         margin-left: -50%;
     }
-    .quadradinhos img{
+
+    .quadradinhos img {
         width: 5%;
         outline: 3px solid white;
+    }
+
+    .s3 {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .s3 select {
+        margin: 10px 0;
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .s3 h1 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .s3 button {
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        height: 35px;
+        border-radius: 10px;
+    }
+
+    .s3 button:hover {
+        background-color: black;
+    }
+
+    .fixo {
+        height: 50px;
+        background-color: blue;
+        position: fixed;
+        bottom: 0px;
+        z-index: 2;
+        top: 835px;
+        width: 100%;
+        color: white;
+    }
+
+    .pedidosS2 {
+        padding-top: 50px;
+    }
+
+    .historico {
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 3px solid black;
+    }
+
+    .historico img {
+        border-radius: 50%;
+    }
+
+    .historico h1 {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .historico button {
+        background-color: black;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px 10px;
+        margin-right: 5px;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+
+    .meus_dadosS2 {
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .meus_dadosS2 .tell1 {
+        width: 50px;
+        text-align: center;
+    }
+
+    .meus_dadosS2 .tell2 {
+        width: 65%;
+        margin-left: 3%;
+    }
+
+    .meus_dadosS2 .endereço {
+        width: 80%;
+    }
+
+    .meus_dadosS2 .complemento {
+        width: 80%;
+    }
+
+    .meus_dadosS2 .nome {
+        width: 80%;
+    }
+
+    .meus_dadosS2 .cartoes {
+        width: 80%;
+    }
+
+    .check {
+        text-align: left;
+        margin-left: 9%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .meus_dadosS2 button {
+        background-color: black;
+        color: white;
+        border: none;
+        width: 80%;
+        height: 30px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .meus_dadosS2 nutton:hover{
+        background-color: lightgreen;
+        color: black;
+    }
+    .meus_dadosS2 input{
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .usuario {
+        width: 50%;
+        height: 30px;
+        font-size: 20px;
+        margin: 10px 0;
+        padding-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .senha {
+        width: 50%;
+        height: 30px;
+        font-size: 20px;
+        margin: 10px 0;
+        padding-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .logar {
+        background-color: white;
+        border: 2px solid black;
+        color: black;
+        text-transform: uppercase;
+        width: 50% !important;
+    }
+    .meus_dadosS2 h1{
+        font-size: 16px;
+        margin: 5px o;
+    }
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    .recolher{
+        transform: rotate(180deg);
+    }
+    .grupo1{
+        background-color: white;
+        border: 2px solid black;
+        margin-top: 10px;
+        width: 95%;
+        margin-left: 2.5%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .grupo1 .imagem1{
+        text-align: left;
+    }
+    .grupo2{
+        background-color: white;
+        border: 2px solid black;
+        margin-top: 10px;
+        width: 85%;
+        margin-left: 8%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .recolher{
+        width: 88.88%;
     }
 }

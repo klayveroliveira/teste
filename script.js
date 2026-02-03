@@ -48,3 +48,35 @@ function comer(){
     }
     document.querySelector("#resposta").innerHTML = `O valor do se pedido é ${valor}`
 }
+
+
+let adicional = document.querySelector("#adicional")
+
+adicional.addEventListener("change",extra)
+
+function extra(){
+    let resposta = document.querySelector("#resposta")
+    let escolha1 = adicional.value
+    let valor = 0
+    if(escolha1 == "Frango"){
+        valor = 0
+        valor = valor + 17
+        let p1 = document.createElement("h1")
+        p1.innerHTML = `O valor do seu adicional é ${valor}`
+        resposta.appendChild(p1)
+    }
+    if(escolha1 == "Ovo"){
+        valor = 0
+        valor = valor + 12
+        let p1 = document.createElement("h1")
+        p1.innerHTML = `O valor do seu adicional é ${valor}`
+        resposta.appendChild(p1)
+    }
+    if(escolha1 == "Bacon"){
+        valor = 0
+        valor = valor + 20
+        let p1 = document.createElement("h1")
+        p1.innerHTML = `O valor do seu adicional é ${valor}`
+        resposta.appendChild(p1)
+    }
+}
